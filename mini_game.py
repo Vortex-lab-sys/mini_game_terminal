@@ -89,6 +89,40 @@ def mini_hack():
     else:
         print("НЕИЗВЕСТНАЯ КОМАНДА!!!")
         
+def calculator():
+    print("Введите + - * или /")
+    minus = input("")
+    time.sleep(1)
+    print("Введите 1 число:")
+    One_number = int(input(""))
+    time.sleep(1)
+    print("Введите 2 число:")
+    two_number = int(input(""))
+    plus_num = One_number + two_number
+    minus_num = One_number - two_number
+    umno_num = One_number * two_number
+    ras_num = One_number / two_number
+    time.sleep
+    if minus == "+":
+            print(f"Итоговое число: {plus_num}")
+            time.sleep(1.5)
+            no_int_menu()
+    elif minus == "-":
+            print(f"Итоговое число: {minus_num}")
+            time.sleep(1.5)
+            no_int_menu()
+    elif minus == "*":
+            print(f"Итоговое число: {umno_num}")
+            time.sleep(1.5)
+            no_int_menu()
+    elif minus == "/":
+            print(f"Итоговое число: {ras_num}")
+            time.sleep(1.5)
+            no_int_menu()
+    else:
+            print("Ошибка!")
+            time.sleep(0.7)
+            calculator()
 
 def no_int_menu():
     print("У вас нету интернета!")
